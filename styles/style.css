@@ -17,11 +17,11 @@ body{
     /* font-size: 20px; */
 }
 .header-section{
-    background-image: url('../images/donation0.jpg');
+    background-image: url('../images/donation0.jpg'),  linear-gradient(180deg, rgba(255, 255, 255, .1), rgba(0, 0, 0, 1));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgba(49, 58, 58, 0.705);
+    background-color: rgba(112, 125, 125, 0.705);
     background-blend-mode: multiply;
     
 }
@@ -45,4 +45,167 @@ body{
     background-color: rgb(255, 119, 0);
     color: white;
     font-size: 20px;
+}
+
+/* Section 01 Donate today */
+.donate-today1{
+    text-align: center;
+    padding: 100px 0;
+}
+.donate-heading, .contact-heading,.donate-plan-heading, .their-lives-heading{
+    font-size:30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.donate-text, .contact-description,.donate-plan-description, .their-lives-description{
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.donate-price-list{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+[class^="dprice-"]{
+    display: flex;
+    padding-left: 22px;
+    align-items: center;
+    margin-top: 20px;
+    font-size:22px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 8px 10px 2px rgba(142, 135, 135, 0.75);
+}
+
+[class^="dprice-"]:hover{
+    background-color: rgb(255, 119, 0);
+    color: white;
+}
+
+.donate-input{
+    margin-top: 60px;
+}
+.donate-input input{
+    padding: 10px;
+    width: 650px;
+    outline: transparent;
+    border: hidden;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(255, 119, 0);
+}
+.donate-input input::placeholder{
+    color: rgb(255, 119, 0);
+    text-align: center;
+}
+.donate-today1 button{
+    border: hidden;
+}
+
+/* 2nd Section "Our Donate Plan" */
+.donate-1{
+    text-align: center;
+}
+
+.donate-2{
+    padding: 20px 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+[class^="donate-plan-card-"]{
+    height: 200px;
+    width: 400px;
+    /* border: 1px solid black; */
+    padding: 12px;
+}
+.plan-card-heading{
+    margin-top: 12px;
+    font-size: 20px;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+}
+.plan-card-description{
+    margin-top: 12px;
+    line-height: 1.5;
+}
+.donate-plan-card-1{
+    background-color: rgba(192, 229, 229, 0.539);
+}
+.donate-plan-card-2{
+    background-color: rgba(229, 192, 227, 0.596);
+}
+.donate-plan-card-3{
+    background-color: rgba(227, 229, 192, 0.596);
+}
+
+/* Their lives depend on your donation 3rd Section*/
+.their-lives{
+    padding: 80px 200px 20px 200px;
+    display: flex;
+}
+
+.image{
+    margin-left: 30px;
+}
+.image img{
+    height:300px;
+    width: 300px;
+    border: 5px solid greenyellow;
+    box-shadow: 10px 12px 10px 2px rgba(142, 135, 135, 0.75);
+}
+.their-lives-1{
+    padding-top: 50px;
+}
+
+/* Section 04 They need us to survive */
+.need-survive{
+    padding: 80px 200px 20px 200px;
+    display: flex;
+}
+.survive-image img{
+    height:300px;
+    width: 300px;
+    border: 5px solid greenyellow;
+    box-shadow: 10px 12px 10px 2px rgba(142, 135, 135, 0.75);
+}
+.survive-description{
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+/* Section 05 Contaact info with subscribe and update */
+.contact{
+    text-align: center;
+    padding: 80px 400px 20px 400px;
+}
+.contact-input-box{
+    margin-top: 30px;
+    padding: 50px 100px;
+    background-color:papayawhip;
+}
+.contact-input-box input{
+    padding: 10px;
+    width: 350px;
+    outline: transparent;
+    border: hidden;
+    font-size: 20px;
+}
+.contact-input-box button{
+    padding: 10px;
+    font-size: 20px;
+    border: hidden;
+    background-color: #FF7700;
+    color: white;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+.footer-heading{
+    font-size:45px;
+    font-family: 'Moon Dance', cursive;
 }
